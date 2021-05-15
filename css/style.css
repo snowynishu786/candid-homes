@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root{
+    --pinky: #fbe3e8;
+    --bgreeny: #5cbdb9;
+    --tgreeny: #ebf6f5;
+}
+
+body{
+    background-color: var(--tgreeny);
+}
+
+
+nav.navbar-inverse {
+    background-color: var(--bgreeny);
+    transition: all .3s ease;
+}
+
+nav.navbar-inverse .alamort{
+    font-size: 3rem;
+    margin: 1rem 0;
+    margin-bottom: -1rem;
+    font-family: 'Dancing Script', cursive;
+    color: var(--blue);
+}
+
+nav.navbar-inverse .alamort:hover{
+    color: var(--pinky);
+    transition: all .3s ease;
+}
+
+nav.navbar-inverse ul{
+    list-style-type: none;
+    color: var(--blue);
+    text-align: center
+}
+
+nav.navbar-inverse ul.navbar-nav li a{
+    color: var(--purple);
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+nav.navbar-inverse ul.navbar-nav li a:hover{
+    background-color: var(--green);
+    transition: all .3s ease;
+    border-radius: 4rem;
+    background-color: var(--tgreeny);
+    color: var(--bgreeny);
+}
+
+nav.navbar-inverse ul.navbar-right li a{
+    background-color: var(--pinky);
+    border-radius: 4rem;
+    border: 0.3rem dotted var(--bgreeny);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+nav.navbar-inverse ul.navbar-right li a:hover{
+    border: 0.2rem dotted var(--bgreeny);
+    transition: all .3s ease;
+}
+
+.head{
+    margin-right: 5%;
+}
+
+.head-left{
+    margin-top: 15rem;
+    width: 45%;
+    margin-left: 3rem;
+}
+
+.head-right{
+    margin-left: 60%;
+    margin-top: -20%;
+    border: 0.3rem dashed var(--bgreeny);
+    border-radius: 2rem;
+    margin-right: 3rem;
+    font-family: 'Dancing Script', cursive;
+    background-color: var(--pinky);
+    letter-spacing: 1px;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {letter-spacing: 5px;}
+    from {
+        background-color: var(--pinky);
+        /*border: 0.5rem dashed var(--bgreeny);*/
+    }
+    to {
+        background-color: var(--bgreeny);
+        /*border: 0.5rem dashed var(--pinky);*/
+    }
+  }
+
+.head-right:hover{
+    border: 0.3rem solid var(--bgreeny);
+    border-radius: 3rem;
+    margin-top: -23%;
+    margin-left: 52%;
+    transition: all .5s ease;
+}
+.head-right h1{
+    font-size: 5rem;
+}
+
+.head-right h1:hover{
+    font-size: 6rem;
+    transition: all .5s ease;
+}
+
+.room{
+    margin-right: 5%;
+}
+
+.rhead h2{
+    margin-top: 20rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    margin-right: 14rem;
+}
+
+.rhead h2:hover{
+    background-color: var(--pinky);
+    border-radius: 2rem;
+    animation: mymove2 5s infinite;
+}
+
+    @keyframes mymove2 {
+        50% {margin-right: 50%;}
+    }
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 3rem;
+    margin: 0 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 2rem;
+    text-decoration: none;
+    /*box-shadow: 1px 1px 0.5px 0.5px #7a7977;*/
+}
+
+.card:hover{
+    background-color: var(--tgreeny);
+    transition: all .4s ease;
+    box-shadow: 1px 1px 1.5px 1.5px #7a7977;
+    letter-spacing: 1px;
+    animation: mymove1 5s infinite;
+  }
+  
+  @keyframes mymove1 {
+    50% {letter-spacing: 5px;}
+  }
+
+.card img{
+    width: 150px;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 150px;
+}
+
+.card img:hover{
+    margin-top: -4rem;
+    transition: all .4s ease;
+}
+
+.card h3{
+    font-size: 2rem;
+    color: var(--bgreeny);
+    margin-bottom: 2rem;
+    margin-top: -0.5rem;
+}
+
+.style .card:hover{
+    letter-spacing: 1px;
+    animation: mymove3 5s infinite;
+}
+
+    @keyframes mymove3 {
+        50% {letter-spacing: 2px;}
+    }
+
+.vertical{
+    writing-mode: vertical-rl;
+    margin-left: 95.5%;
+    position: fixed;
+    z-index: 999;
+    border-left: 0.3rem dashed black;
+    margin-top: -5%;
+    height: 100%;
+    background-color: var(--pinky);
+}
+
+.vertical h3{
+    font-size: 2rem;
+    border-radius: 2rem;
+    margin-top: 4%;
+    height: 100%;
+    font-family: cursive;
+}
+
+.vertical h3:hover{
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+.footer{
+    background-color: var(--tgreeny);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+}
+
+.footer h2{
+    font-size: 3.5rem;
+}
+
+.footer .f1, .footer .f2, .footer .f3{
+    margin-left: 25%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer .f ul{
+    list-style-type: none;
+}
+
+.footer .f ul li{
+    margin-top: 1rem;
+}
+
+.footer .link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .link:hover{
+    color: var(--bgreeny);
+    transition: all .4s ease;
+}
