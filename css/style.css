@@ -557,7 +557,7 @@ h1 {
 
 .wrap img:hover{
     padding: 0rem;
-    transition: 0.5s all ease;
+    transition: 0.5s all ease-in-out;
 }
 
 .wrap h2{
@@ -570,7 +570,7 @@ h1 {
 
 .wrap h2:hover{
     color: var(--bgreeny);
-    transition: 0.5s all ease;
+    transition: 0.5s all ease-in-out;
 }
 
 .wrap p{
@@ -583,4 +583,148 @@ h1 {
 .wrap a{
     text-align: right;
     margin-right: 2rem;
+}
+
+
+
+.c{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.c:hover{
+    color: black;
+}
+
+.a1{
+    background-color: #0D0000;
+    margin-left: 4%;
+    border-radius: 10rem;
+    margin-right: 4%;
+    margin-top: 10%;
+}
+
+.a1:hover{
+    transition: 1s all ease;
+    background-color: white;
+    border: 0.5rem solid #0D0000;
+}
+
+.a2{
+    background-color: #498C86;
+    margin-left: 4%;
+    border-radius: 10rem;
+    margin-right: 4%;
+    margin-top: 12%;
+}
+
+.a2:hover{
+    transition: 1s all ease;
+    background-color: white;
+    border: 0.5rem solid #498C86;
+}
+
+.a3{
+    background-color: #51A696;
+    margin-left: 4%;
+    border-radius: 10rem;
+    margin-right: 4%;
+    margin-top: 12%;
+    
+}
+
+.a3:hover{
+    transition: 1s all ease;
+    background-color: white;
+    border: 0.5rem solid #51A696
+}
+
+.a4{
+    background-color: #BFB4AE;
+    margin-left: 4%;
+    border-radius: 10rem;
+    margin-right: 4%;
+    margin-top: 12%;
+}
+
+.a4:hover{
+    transition: 1s all ease;
+    background-color: white;
+    border: 0.5rem solid #BFB4AE;
+}
+
+.a5{
+    background-color: #6b6565;
+    margin-left: 4%;
+    border-radius: 10rem;
+    margin-right: 4%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.a5:hover{
+    transition: 1s all ease;
+    background-color: white;
+    border: 0.5rem solid #6b6565;
+}
+
+.c img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+    margin: 5rem;
+    object-fit: cover;
+    margin-left: 10rem;
+}
+
+.left1{
+    height: 400px;
+    width: 400px;
+}
+
+.right1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-top: -20%;
+    font-size: 8rem;
+    margin-left: 30%;
+}
+
+.about h1{
+    font-size: 10rem;
+    color: #0D0000;
+    margin-top: 5%;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.a1 img{
+    border: 1rem solid #0D0000;
+}
+
+.a2 img{
+    border: 1rem solid #498C86;
+}
+
+.a3 img{
+    border: 1rem solid #51A696;
+}
+
+.a4 img{
+    border: 1rem solid #BFB4AE;
+}
+
+.a5 img{
+    border: 1rem solid #6b6565;
+}
+
+.color{
+    background-color: #D9D6D0;
+    margin-bottom: -5%;
 }
