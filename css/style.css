@@ -817,3 +817,50 @@ h1 {
     color: var(--bgreeny);
     transition: 0.5s all ease;
 }
+
+.topic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-main.jpg);
+    width: 100%;
+    height: 400px;
+    margin-top: 5%;
+}
+
+.topic h2{
+    padding: 10% 30%;
+    color: white;
+    font-size: 7rem;
+    background: linear-gradient();
+    font-family: Dancing Script, 'cursive';
+}
+
+.intro{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.intro h5{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.intro p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.col2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.col2 h5{
+    font-size: 2rem;
+}
+
+.col2 p{
+    font-size: 1.5rem;
+}
