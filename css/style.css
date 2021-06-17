@@ -65,163 +65,284 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     transition: all .3s ease;
 }
 
-.head{
-    margin-right: 5%;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.head-left{
-    margin-top: 15rem;
-    width: 45%;
-    margin-left: 3rem;
+.navbar1{
+    height: 12%;
+    display: flex;
+    align-items: center;
 }
 
-.head-right{
-    margin-left: 60%;
-    margin-top: -20%;
-    border: 0.3rem dashed var(--bgreeny);
-    border-radius: 2rem;
-    margin-right: 3rem;
-    font-family: 'Dancing Script', cursive;
-    background-color: var(--pinky);
-    letter-spacing: 1px;
-    animation: mymove 5s infinite;
+.logo{
+    width: 50px;
+    cursor: pointer;
 }
 
-@keyframes mymove {
-    50% {letter-spacing: 5px;}
-    from {
-        background-color: var(--pinky);
-        /*border: 0.5rem dashed var(--bgreeny);*/
-    }
-    to {
-        background-color: var(--bgreeny);
-        /*border: 0.5rem dashed var(--pinky);*/
-    }
-  }
-
-.head-right:hover{
-    border: 0.3rem solid var(--bgreeny);
-    border-radius: 3rem;
-    margin-top: -23%;
-    margin-left: 52%;
-    transition: all .5s ease;
-}
-.head-right h1{
-    font-size: 5rem;
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    display: none;
 }
 
-.head-right h1:hover{
-    font-size: 6rem;
-    transition: all .5s ease;
+.container .navbar1 nav{
+    flex: 1;
+    text-align: right;
 }
 
-.room{
-    margin-right: 5%;
+.container .navbar1 nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 60px;
 }
 
-.rhead h2{
-    margin-top: 20rem;
+.container .navbar1 nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    font-family: Source Sans Pro;
+}
+
+.container .navbar1 nav ul li a:hover{
+    color: #fff;
+}
+
+.container .navbar1 nav ul li a{
+    text-decoration: none;
+}
+
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .5s;
+}
+
+.cool-link:hover:after{
+    width: 100%;
+    transition: width .5s;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-top: -38%;
+    margin-left: 4rem;
+}
+
+.col{
+    flex-basis: 50%;
+    margin-left: 20rem;
+    color: #fff;
+    margin-right: 8rem;
+}
+
+.col1{
+    margin-left: -2rem;
+    margin-top: -4rem;
+}
+
+.col h1{
+    font-size: 70px;
+}
+
+.col p{
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.cardo{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2rem;
     margin-left: 2rem;
-    margin-bottom: 5rem;
-    margin-right: 14rem;
 }
 
-.rhead h2:hover{
-    background-color: var(--pinky);
-    border-radius: 2rem;
-    animation: mymove2 5s infinite;
+.cardo:hover{
+    transform: translateY(-10px);
+    transition: 0.5s all ease;
 }
 
-    @keyframes mymove2 {
-        50% {margin-right: 50%;}
+.cardo1{
+    background-image: url(../images/carousel1.jpeg);
+}
+
+.cardo2{
+    background-image: url(../images/carousel2.jpeg);
+}
+
+.cardo3{
+    background-image: url(../images/carousel3.jpeg);
+}
+
+.cardo4{
+    background-image: url(../images/carousel4.jpeg);
+}
+
+
+.rhead{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rhead span{
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
+    color: #6b6565;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: white;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    font-size: 30px;
+    color: #498C86;
+}
+
+    @keyframes text {
+        0%{
+            color: white;
+            margin-bottom: -48px;
+        }
+
+        30%{
+            letter-spacing: 25px;
+            margin-bottom: -40px;
+        }
+
+        85%{
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+        }
     }
+
 
 .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 5rem;
-    grid-row-gap: 3rem;
-    margin: 0 5%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    display: flex;
+    margin-left: 2rem;
+    margin-right: 9rem;
+    margin-top: 4rem;
+}
+
+.card-wrappero{
+    display: flex;
+    margin-left: 22rem;
+    margin-right: 9rem;
+    margin-top: 4rem;
 }
 
 .card{
-    border-radius: 2rem;
-    text-decoration: none;
-    height: 150px;
-    /*box-shadow: 1px 1px 0.5px 0.5px #7a7977;*/
+    position: relative;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
 }
 
-.card:hover{
-    background-color: var(--bgreeny);
-    transition: all .4s ease;
-    box-shadow: 1px 1px 1.5px 1.5px #7a7977;
-    letter-spacing: 1px;
-    animation: mymove1 5s infinite;
-  }
-  
-  @keyframes mymove1 {
-    50% {letter-spacing: 5px;}
-  }
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6b6565;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before{
+    clip-path: circle(400px at center);
+    background: #BFB4AE;
+}
 
 .card img{
-    width: 150px;
-    border-radius: 1rem;
-    margin: 1rem;
-    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    border-radius: 2rem;
+    pointer-events: none;
+    transition: 0.5s;
 }
 
-.card img:hover{
-    margin-top: -4rem;
-    transition: all .4s ease;
+.card:hover img{
+    left: 72%;
+    height: 400px;
 }
 
-.card h3{
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 2rem;
-    margin-top: -0.5rem;
-    height: 30px;
-    line-height: 25px;
-}
-.card h3:hover{
-    color: var(--bgreeny);
-}
-
-.style .card:hover{
-    letter-spacing: 1px;
-    animation: mymove3 5s infinite;
+.card .content1{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: -8rem;
 }
 
-    @keyframes mymove3 {
-        50% {letter-spacing: 2px;}
-    }
+.card:hover .content1{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content1 h3{
+    font-family: Dancing Script, cursive;
+    font-size: 5rem;
+    color: #fff;
+}
 
 .vertical{
-    writing-mode: vertical-rl;
-    margin-left: 95.5%;
-    position: fixed;
-    z-index: 999;
-    border-left: 0.3rem dashed black;
-    margin-top: -5%;
-    height: 100%;
-    background-color: var(--pinky);
+    writing-mode: vertical-lr;
 }
 
-.vertical h3{
-    font-size: 2rem;
-    border-radius: 2rem;
-    margin-top: 4%;
-    height: 100%;
-    font-family: cursive;
-}
-
-.vertical h3:hover{
-    letter-spacing: 1px;
-    transition: all .5s ease;
-}
 
 .footer{
     background-color: var(--tgreeny);
@@ -273,44 +394,6 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* .card-wrapper1{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 5rem;
-    grid-row-gap: 3rem;
-    margin: 0 5%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 15rem;
-}
-
-.card1{
-    height: 300px;
-    width: 600px;
-}
-
-.card1 img{
-    height: 300px;
-    border-radius: 2rem;
-}
-
-.hover{
-    margin-left: 300px;
-}
-
-.hover h2{
-    margin-top: -99.5%;
-    height: 300px;
-    border-radius: 2rem;
-    border: 0.1rem solid black;
-    color: rgb(59, 59, 59);
-    text-align: left;
-}
-
-.hover h2:hover{
-    display: block;
-} */
 
 .card-wrapper1{
     display: flex;
@@ -604,72 +687,67 @@ h1 {
     background-color: #0D0000;
     margin-left: 4%;
     border-radius: 10rem;
-    margin-right: 4%;
+    margin-right: 30%;
     margin-top: 10%;
 }
 
 .a1:hover{
     transition: 1s all ease;
     background-color: white;
-    border: 0.5rem solid #0D0000;
 }
 
 .a2{
     background-color: #498C86;
-    margin-left: 4%;
+    margin-left: 30%;
     border-radius: 10rem;
     margin-right: 4%;
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .a2:hover{
     transition: 1s all ease;
     background-color: white;
-    border: 0.5rem solid #498C86;
 }
 
 .a3{
     background-color: #51A696;
     margin-left: 4%;
     border-radius: 10rem;
-    margin-right: 4%;
-    margin-top: 12%;
+    margin-right: 30%;
+    margin-top: 10%;
     
 }
 
 .a3:hover{
     transition: 1s all ease;
     background-color: white;
-    border: 0.5rem solid #51A696
 }
 
 .a4{
     background-color: #BFB4AE;
-    margin-left: 4%;
+    margin-left: 30%;
     border-radius: 10rem;
     margin-right: 4%;
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .a4:hover{
     transition: 1s all ease;
     background-color: white;
-    border: 0.5rem solid #BFB4AE;
 }
 
 .a5{
     background-color: #6b6565;
     margin-left: 4%;
     border-radius: 10rem;
-    margin-right: 4%;
+    margin-right: 30%;
     margin-top: 12%;
-    margin-bottom: 12%;
+    margin-bottom: 10%;
 }
 
 .a5:hover{
     transition: 1s all ease;
     background-color: white;
-    border: 0.5rem solid #6b6565;
 }
 
 .c img{
@@ -684,15 +762,15 @@ h1 {
 }
 
 .left1{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
 }
 
 .right1{
     text-align: center;
     font-family: 'Dancing Script', cursive;
     margin-top: -20%;
-    font-size: 8rem;
+    font-size: 4rem;
     margin-left: 30%;
 }
 
@@ -727,4 +805,15 @@ h1 {
 .color{
     background-color: #D9D6D0;
     margin-bottom: -5%;
+}
+
+.links a{
+    color: #7a7977;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.links a:hover{
+    color: var(--bgreeny);
+    transition: 0.5s all ease;
 }
