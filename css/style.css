@@ -11,6 +11,10 @@ body{
     background-color: var(--tgreeny);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 nav.navbar-inverse {
     background-color: var(--bgreeny);
@@ -65,7 +69,7 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     transition: all .3s ease;
 }
 
-.container{
+.container1{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/home.jpg);
@@ -95,18 +99,18 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     display: none;
 }
 
-.container .navbar1 nav{
+.container1 .navbar1 nav{
     flex: 1;
     text-align: right;
 }
 
-.container .navbar1 nav ul li{
+.container1 .navbar1 nav ul li{
     list-style-type: none;
     display: inline-block;
     margin-left: 60px;
 }
 
-.container .navbar1 nav ul li a{
+.container1 .navbar1 nav ul li a{
     text-decoration: none;
     display: inline-block;
     color: #fff;
@@ -114,11 +118,11 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     font-family: Source Sans Pro;
 }
 
-.container .navbar1 nav ul li a:hover{
+.container1 .navbar1 nav ul li a:hover{
     color: #fff;
 }
 
-.container .navbar1 nav ul li a{
+.container1 .navbar1 nav ul li a{
     text-decoration: none;
 }
 
@@ -263,7 +267,7 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     margin-top: 4rem;
 }
 
-.card{
+.card0{
     position: relative;
     width: 500px;
     height: 350px;
@@ -273,7 +277,7 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     transition: 0.5s;
 }
 
-.card .circle{
+.card0 .circle{
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +287,7 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     overflow: hidden;
 }
 
-.card .circle::before{
+.card0 .circle::before{
     content: '';
     position: absolute;
     top: 0;
@@ -295,12 +299,12 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     transition: 0.5s;
 }
 
-.card:hover .circle:before{
+.card0:hover .circle:before{
     clip-path: circle(400px at center);
     background: #BFB4AE;
 }
 
-.card img{
+.card0 img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -311,12 +315,12 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     transition: 0.5s;
 }
 
-.card:hover img{
+.card0:hover img{
     left: 72%;
     height: 400px;
 }
 
-.card .content1{
+.card0 .content1{
     position: relative;
     width: 50%;
     left: 20%;
@@ -327,13 +331,13 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     margin-left: -8rem;
 }
 
-.card:hover .content1{
+.card0:hover .content1{
     left: 0;
     opacity: 1;
     visibility: visible;
 }
 
-.card .content1 h3{
+.card0 .content1 h3{
     font-family: Dancing Script, cursive;
     font-size: 5rem;
     color: #fff;
@@ -570,7 +574,6 @@ h1 {
   background-color: white;
 }
 
-/* Animation */
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -599,7 +602,6 @@ h1 {
     transform: translate3d(85px,0,0);
   }
 }
-/*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
     height:40px;
@@ -863,4 +865,150 @@ h1 {
 
 .col2 p{
     font-size: 1.5rem;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.heading h2{
+    font-size: 6rem;
+    display: block;
+    color: #6b6565;
+    transition: .5s;
+}
+
+.heading h2:hover{
+    color: #51A696;
+}
+
+.boxing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    margin-top: 10rem;
+    margin-left: 16rem;
+    height: 250px;
+}
+
+.middle1{
+    position: absolute;
+    margin-top: 1rem;
+}
+
+.middle2{
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 30%;
+}
+
+.middle3{
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 60%;
+}
+
+.card{
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    border-radius: 2rem;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 1rem;
+    transition: .6s linear;
+}
+
+.front img{
+    height: 100%;
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+    background: #7a7977;
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: 10rem;
+    text-decoration: none;
+}
+
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back-content h2 a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.back-content:hover h2 a{
+    color: #7ce6dd;
+}
+
+div.contact{
+    margin-top: 15rem;
+}
+
+div.contact h1{
+    font-family: Dancing Script, 'cursive';
+    color: #6b6565;
+    font-size: 8rem;
+    text-align: center;
+}
+
+div.contact h1 span{
+    color: #498C86;
+}
+
+div.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    text-align: center;
+    margin-left: 16rem;
+}
+
+div.contact .card-wrapper .card{
+    text-align: center;
+}
+
+div.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+}
+
+div.contact .card-wrapper .card h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: Dancing Script, 'cursive';
+}
+
+div.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+    margin-bottom: 4rem;
 }
