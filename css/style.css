@@ -126,20 +126,6 @@ nav.navbar-inverse ul.navbar-right li a:hover{
     text-decoration: none;
 }
 
-.cool-link::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .5s;
-}
-
-.cool-link:hover:after{
-    width: 100%;
-    transition: width .5s;
-}
-
 .row{
     display: flex;
     height: 88%;
