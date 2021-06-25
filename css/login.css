@@ -56,7 +56,7 @@ section .contentBx .formBx h2{
     transform: translate(-50%, -50%);
 }
 section .contentBx .formBx .inputBx{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 section .contentBx .formBx .inputBx span{
     font-size: 12px;
